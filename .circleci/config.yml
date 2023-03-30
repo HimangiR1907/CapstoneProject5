@@ -56,15 +56,6 @@ jobs:
             command: |
               aws eks --region $AWS_DEFAULT_REGION update-kubeconfig --name $CLUSTER_NAME
         - run:
-            name: Prepare K8S template
-            command: |
-              ls 
-              rm -rf .k8s/.generated && mkdir -p kube/.k8s/.generated
-              for f in  kube/.k8s/template/deployment.yml
-                do
-                envsubst < $f > "kube/.k8s/.generated/$(basename $f)"
-              done
-        - run:
             name: Deploy
             command: |
               kubectl get pod
