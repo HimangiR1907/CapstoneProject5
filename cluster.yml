@@ -11,7 +11,7 @@ managedNodeGroups:
     minSize: 2
     maxSize: 2
     desiredCapacity: 1
-    availabilityZones: ["us-east-1a", "us-east-1b"]
+    availabilityZones: ["us-east-1d", "us-east-1c"]
     volumeSize: 20
     ssh:
       publicKeyName: udacity
