@@ -60,6 +60,7 @@ jobs:
             command: |
               kubectl get pod
               kubectl get deployments
+              kubectl get services
 workflows:
   default:
     jobs:
