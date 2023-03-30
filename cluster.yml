@@ -9,8 +9,9 @@ managedNodeGroups:
   - name: nodegroup
     instanceType: t2.micro
     minSize: 2
-    maxSize: 4
-    desiredCapacity: 3
+    maxSize: 2
+    desiredCapacity: 1
+    availabilityZones: ["us-east-1a", "us-east-1b"]
     volumeSize: 20
     ssh:
       publicKeyName: udacity
