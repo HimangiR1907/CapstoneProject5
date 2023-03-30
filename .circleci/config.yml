@@ -59,6 +59,7 @@ jobs:
             name: Deploy
             command: |
               kubectl get pod
+              kubectl get deployments
 workflows:
   default:
     jobs:
