@@ -29,6 +29,7 @@ metadata:
   name: capstoneproject5
 spec:
   ports:
+    type: NodePort
   - port: 8080
     targetPort: 8080
   selector:
